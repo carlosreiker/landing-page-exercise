@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wire+One&display=swap');
 @import url('./variables.css');
+@import url('./navbar.css');
 
 * {
     margin: 0;
@@ -8,62 +9,30 @@
     font-family: poppins, sans-serif;
 }
 
-header {
-    background-color: var(--color-neutral-1);
-    padding: 12px 4%;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+a.btn {
+    text-decoration: none;
+}
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
 
-        .logo {
-            width: 180px;
-        }
+.btn-mobile {
+    font-size: 1.5rem;
+}
 
-        ul {
-            display: none;
-            list-style: none;
-            flex-direction: column;
-            gap: 0.5rem;
-            position: absolute;
-            top: 80px;
-            background-color: var(--color-neutral-1);
-            left: 0;
-            padding: 1rem;
+.btn-default {
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-0);
 
-
-            &.show {
-                display: flex;
-            }
-
-            li {
-                text-align: center;
-            
-                a {
-                    color: var(--color-neutral-8);
-                    text-decoration: none;
-                    font-size: 1rem;
-                    font-weight: 500;
-
-                    &:hover {
-                        color: var(--color-primary-1);
-                        border-bottom: 1px solid var(--color-primary-1);
-                    }
-
-                }
-            
-            }
-
-
-        }
-
-        .btn-default {
-            display: none;
-        }
-
+    &:hover {
+        background-color: var(--color-neutral-2);
     }
 }
