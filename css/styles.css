@@ -311,7 +311,18 @@ a.btn {
     }
 }
 
-@media (min-width: 768px) {
+footer {
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-0);
+    text-align: center;
+    padding: 12px;
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
     #about {
         margin: 4%;
         justify-content: center;
